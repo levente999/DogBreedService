@@ -1,0 +1,19 @@
+<div class="container mt-5">
+  <h1 class="mb-4 text-center">Look up Dog Breeds</h1>
+  <div class="row align-items-center">
+    <div class="col-md-6 d-flex justify-content-center">
+      <form data-controller="breed" class="w-75">
+        <div class="mb-3">
+          <label for="breed" class="form-label">Breed</label>
+          <input type="text" class="form-control" id="breed" name="breed" data-breed-target="breed" placeholder="Enter a breed name">
+          <div id="error-message" class="text-danger mt-2"></div>
+        </div>
+        <button type="submit" class="btn btn-primary w-100" data-action="breed#fetchBreed">Submit</button>
+      </form>
+    </div>
+    <div class="col-md-6 text-center">
+      <div id="dogImage" class="mt-3 img-fluid"></div>
+      <div id="breedName" class="mt-2 font-weight-bold text-capitalize"></div>
+    </div>
+  </div>
+</div>
